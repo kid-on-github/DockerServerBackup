@@ -1,0 +1,56 @@
+body {
+	padding-top: 7.5%;
+  padding-bottom: 50px;
+	background: #1778FF; /* browsers that don't support gradients */
+	background: -webkit-linear-gradient(left top, #1778FF, #0CFF60); /*Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #1778FF, #0CFF60); /* Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #1778FF, #0CFF60); /* Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #1778FF, #0CFF60); /* Standard */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #eaeaea;
+	min-height: 90%;  /* for browsers that don't support vh */
+  min-height: 90vh;
+	font-size: 2.3em;
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse.bg-lamp li a,
+.navbar-inverse.bg-lamp {
+	color: #fff;
+	background-color: #15A1E8;
+	border-color: #1778FF;
+	font-size: .8em;
+}
+.navbar-inverse.bg-lamp li a:hover,
+.navbar-inverse.bg-lamp li a:focus,
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .active a:hover,
+.navbar-inverse .navbar-nav .active a:focus {
+	color: #fff;
+	background-color: #1778FF;
+}
+#bs-example-navbar-collapse-1 {
+	margin-left: -20px;
+}
+#brand {
+	font-size: 1em;
+}
+.main {
+  padding: 5%;
+  border: 5px solid #0BBFE8;
+	background-color: #15A1E8;
+	border-radius: 17px;
+}
+input {
+	max-width: 100%;
+	margin-bottom:10%;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 5%;
+	margin-top: 0;
+}
+form {
+  margin-top: 5%;
+}

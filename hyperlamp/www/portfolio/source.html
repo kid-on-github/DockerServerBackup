@@ -1,0 +1,846 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio | C++ Programs</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script src="slideshow.js"></script>
+</head>
+
+<body>
+<div class="bgtop">
+  <div class="container">
+    <h1 class="title">Hyper Lamp</h1>
+    <p class="subtitle">The home for all things lampy</p>
+    <ul class="hnav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Games.html">Games</a></li>
+      <li><a href="Classes.html">Classes</a></li>
+      <li><a href="About Me.html">About Me</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="images/header1.jpg">
+  </div>
+
+  <div class="mySlides fade" id="img2">
+    <img src="images/header2.jpg">
+  </div>
+
+  <div class="mySlides fade" id="img3">
+    <img src="images/header3.jpg">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div class="dotdiv">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    <div class="main">
+      <h2>C++ Programs</h2>
+      <p>These are the simple programs I made during Intro to Programing Logic at Iowa Lakes Community College</p>
+      <p>&nbsp;</p>
+      <h3>Name Program</h3>
+      <p>It prints out my name using special symbols.</p>
+      <p>&nbsp;</p>
+      <details>
+      <summary>Code</summary>
+      <div class="code">
+        <div class="numbs">
+          <pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32</pre>
+        </div>
+        <pre class="cont">// Andrew Larson 
+// Name program 
+// 9/18/2016  
+// font - epic
+
+#include <iostream>
+using namespace std;
+
+int main() {
+   // output design of my first name - Andrew
+   cout << " _______  _        ______   _______  _______          \n";
+	cout << "(  ___  )( (    /|(  __  \\ (  ____ )(  ____ \\|\\     /|\n";
+	cout << "| (   ) ||  \\  ( || (  \\  )| (    )|| (    \\/| )   ( |\n";
+	cout << "| (___) ||   \\ | || |   ) || (____)|| (__    | | _ | |\n";
+	cout << "|  ___  || (\\ \\) || |   | ||     __)|  __)   | |( )| |\n";
+	cout << "| (   ) || | \\   || |   ) || (\\ (   | (      | || || |\n";
+	cout << "| )   ( || )  \\  || (__/  )| ) \\ \\__| (____/\\| () () |\n";
+	cout << "|/     \\||/    )_)(______/ |/   \\__/(_______/(_______)\n";
+   // returns/exit program back to operating system      
+   return 0;
+}
+
+/*	This prints out
+ _______  _        ______   _______  _______          
+(  ___  )( (    /|(  __  \ (  ____ )(  ____ \|\     /|
+| (   ) ||  \  ( || (  \  )| (    )|| (    \/| )   ( |
+| (___) ||   \ | || |   ) || (____)|| (__    | | _ | |
+|  ___  || (\ \) || |   | ||     __)|  __)   | |( )| |
+| (   ) || | \   || |   ) || (\ (   | (      | || || |
+| )   ( || )  \  || (__/  )| ) \ \__| (____/\| () () |
+|/     \||/    )_)(______/ |/   \__/(_______/(_______)
+*/ </pre>
+      </div>
+      </details>
+      <h3>Stock Program</h3>
+      <p>It does some math about stocks and displays the results.</p>
+      <p>&nbsp;</p>
+      <details>
+      <summary>Code</summary>
+      <div class="code">
+        <div class="numbs">
+          <pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33</pre>
+        </div>
+        <pre class="cont">//Andrew Larson
+//September 27, 2016
+//Program 2.10
+
+#include <iostream>
+//#include <string>
+using namespace std;
+
+int main(){
+	//establishes variables
+	float stockPrice, totalPrice, payment, loss, gain;
+	const int STOCKAMOUNT = 1000;
+	
+	//sets the values and gives info on stock purchase
+	stockPrice = 32.87;
+	totalPrice = stockPrice * STOCKAMOUNT;
+	payment = totalPrice * 0.02;
+	loss = totalPrice + payment;
+	cout << "\nJoe paid $" << totalPrice << " for the stocks.\n";
+	cout << "He paid the broker $" << payment << " as a commission.\n";
+	cout << "In this transaction he paid $" << loss << endl << endl;
+	
+	//changes the values and gives info on the sale and net change
+	stockPrice = 33.92;
+	totalPrice = stockPrice*STOCKAMOUNT;
+	payment = totalPrice*0.02;
+	gain = totalPrice-payment;
+	cout << "Joe sold his stocks for $" << totalPrice << endl;
+	cout << "He paid the broker $" << payment << " as a commission.\n";
+	cout << "In this transaction he made $" << gain << endl;
+	cout << "Overall he had a net change of " << gain-loss << " dollars.\n";
+	return 0;
+}</pre>
+      </div>
+      </details>
+      <h3>Stadium Program</h3>
+      <p>It asks the user how many seats were sold in different classes of a stadium and gives them the total sales money amount.</p>
+      <p>&nbsp;</p>
+      <details>
+      <summary>Code</summary>
+      <div class="code">
+        <div class="numbs">
+          <pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40</pre>
+        </div>
+        <pre class="cont">// Andrew Larson
+// Oct 4, 2016
+// Program 3.8
+
+#include <iostream>
+using namespace std;
+
+// asks for the number of tickets sold, then adds the total of the class to the previous totals
+void getLevelAmt(char level, int cost, int& total) {
+	int tickets = 0;
+	cout << "Enter the amount of tickets sold in class " << level << ".\n";
+	cin >> tickets;
+	total = total + cost * tickets;
+}
+
+// displays result
+void showResult(int total) {
+	cout << "The total income generated from the ticket sales is $" << total << ".\n";
+}
+
+int main(){
+	// declares variables
+	int total=0,cost;
+	char level;
+	
+	// runs the same function but with different classes and costs
+	level = 'A';
+	cost = 15;
+	getLevelAmt(level,cost,total);
+	level = 'B';
+	cost = 12;
+	getLevelAmt(level,cost,total);
+	level = 'C';
+	cost = 9;
+	getLevelAmt(level,cost,total);
+	
+	// displays the total
+	showResult(total);
+	return 0;
+}</pre>
+      </div>
+      </details>
+      <h3>Time Calculation Program</h3>
+      <p>It tells you how many minutes, hours, and days are in a given number of seconds.</p>
+      <p>&nbsp;</p>
+      <details>
+      <summary>Code</summary>
+      <div class="code">
+        <div class="numbs">
+          <pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56</pre>
+        </div>
+        <pre class="cont">// Andrew Larson 
+// 10/11/2016  
+// Program 4.11
+
+#include <iostream>
+//#include <string>
+using namespace std;
+
+//prototypes
+void intro();
+void input(float&);
+void calcout(float);
+
+int main(){
+	float seconds;
+	intro();
+	input(seconds);
+	calcout(seconds);
+	return 0;
+}
+
+void intro() {
+	cout << "\nThis program will tell you how many minutes, hours, and days\nare made of ";
+    	cout << "some number of seconds.\n\n";
+}
+
+void input(float& secs) {
+	// gets user input
+	cout << "Enter any number of seconds.\n";
+	cin >> secs;
+	// asks for new input if the number is too low
+	while (secs < 60) {
+		cout << "\nSorry bud that number is too low, try again.\n";
+		cout << "Enter any number of seconds.\n";
+		cin >> secs;
+		if (secs >= 60)
+			break;
+	}
+}
+
+void calcout(float second) {
+	// calculates the different values
+	float mins = second/60;
+	float hours = second/3600;
+	float days = second/86400;
+	
+	// displays the available results
+	cout << second << " seconds converts to:" << endl;
+	cout << mins << " minute(s).\n";
+	if (mins >= 60) {
+		cout << hours << " hour(s).\n";
+		if (hours >= 24) {
+			cout << days << " day(s).\n";
+		}
+	}
+}</pre>
+      </div>
+      </details>
+      <h3>Number Guess Program</h3>
+      <p>It generates a random number, then gives you 10 chances to guess what it is.</p>
+      <p>&nbsp;</p>
+      <details>
+      <summary>Code</summary>
+      <div class="code">
+        <div class="numbs">
+          <pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96</pre>
+        </div>
+        <pre class="cont">// Andrew Larson 
+// 10/20/2016  
+// Number Guess Program
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+//prototypes
+void intro();
+int generate();
+int input(int,int,int&);
+int calc(int,int,int,int&);
+bool validate(int);
+
+int main(){
+	//establish variables
+	int number, tries = 0, guess, win = 0;
+	intro();
+	// generates a random number
+	number = generate();
+	// asks the user to guess until they get it right or fail 10 times
+	while (win < 1) {
+		guess = input(tries,number,win);
+		tries = tries + calc(tries,guess,number,win);
+	}
+	return 0;
+}
+
+void intro() {
+	cout << "\nThis program will generate a random number between 1-100, then gives you\nten chances to ";
+    	cout << "guess what that number is.\n\n";
+}
+
+int generate() {
+	int number;
+	srand ((unsigned)time(NULL));          // Sets the seed value for the random number generator
+    number = (rand() % 100) + 1;         // Generates a random number between 1 and 100
+	return number;
+}
+
+int input(int tri, int num1, int& win1) {
+	int result;
+	if (tri == 0) {
+		do {
+			cout << "Enter a number between 1-100.\n";
+			cin >> result;
+		}
+		while(!validate(result));
+		return result;
+	}
+	else if (tri < 10) {
+		do {
+			cout << "\nEnter a different number (still between 1-100).\n";
+			cin >> result;
+		}
+		while(!validate(result));
+		return result;
+	}
+	else {
+		cout << "\nSorry bud, but that was 10 guesses\nThe random number was " << num1 << endl;
+		win1 = 1;
+	}
+}
+
+int calc (int cont, int guess, int num2, int& win2) {
+	if (cont < 9) { // because otherwise it would print the couts below twice after the tenth guess
+		if (guess == num2) {
+			cout << "Congrats, you got it right!\n";
+			win2 = 1;
+		}
+		else if (guess < num2) {
+			cout << "\nNope, wrong number. It's higher than that.\n";
+			return 1;
+		}
+		else {
+			cout << "\nNope, wrong number. It's lower than that.\n";
+			return 1;
+		}
+	}
+}
+
+bool validate(int result) {
+	bool valid = true;
+	if (result < 1) {
+		cout << "\nThe number has to be between 1-100.\n";
+		valid = false;
+	}
+	else if (result > 100) {
+		cout << "\nThe number has to be less than 100.\n";
+		valid = false;
+	}
+	else
+		valid = true;
+	return valid;
+} </pre>
+      </div>
+      </details>
+      <h3>Lottery Program</h3>
+      <p>It generates 5 random numbers and asks you to guess them for a chance to win (fake) money.</p>
+      <p>&nbsp;</p>
+      <details>
+      <summary>Code</summary>
+      <div class="code">
+        <div class="numbs">
+          <pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109</pre>
+        </div>
+        <pre class="cont">// Andrew Larson 
+// 11/22/2016  
+// Lottery Array
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int const NUMBERS = 5;
+
+// prototypes
+void intro();
+int input(string);
+int compare(int,int);
+int prizes(int);
+
+int main(){
+	intro();
+	int lottery[NUMBERS], playerGuess[NUMBERS];
+	int correct = 0;
+	// sets the generation seed
+	srand(time(NULL));
+	for (int i = 0; i < NUMBERS; i++) {
+		// generates the random numbers
+		lottery[i] = rand() % (30) + 1;
+		// collects the players guess
+		string place[NUMBERS] = {"first","second","third","fourth","fifth"};
+		playerGuess[i] = input(place[i]);
+	}
+	cout << "\n";
+	
+	// compares the users answers to the generated
+	for (int i = 0; i < NUMBERS; i++) {
+	    bool answer[NUMBERS] = {0,0,0,0,0};
+		answer[i] = compare(lottery[i],playerGuess[i]);
+		if (answer[i] == true) {
+			correct = correct + 1;
+		}
+	}
+	
+	// displays the computers answers
+	cout << "\nThe winning numbers were:\t";
+	for (int i = 0; i < NUMBERS; i++) {
+	   cout << lottery[i] << ",";
+	}
+	// displays the users answers
+	cout << "\nYour guesses were:\t\t";
+	for (int i = 0; i < NUMBERS; i++) {
+	   cout << playerGuess[i] << ",";
+	}
+	// displays the end result
+	prizes(correct);
+	
+	return 0;
+}
+
+void intro() {
+	cout << "\nWelcome to your local program lottery!\nWe generate a random set of 5 different values,";
+    	cout << "\nit's your job to guess those values in order to win.\nGood Luck.\n";
+}
+
+int input(string place) {
+	int hold = 0;
+		cout << "\nEnter your guess (between 1-30) for the "<< place << " of the five values.\n";
+		cin >> hold;
+		while (hold > 30 || hold < 1) {
+		    cout << "\nThe number has to be between 1-30, try agian.\n";
+		    cin >> hold;
+		}
+	return hold;
+}
+
+int compare(int comp, int play) {
+	if (comp == play)
+		return true;
+	else 
+		return false;
+}
+
+int prizes(int correct) {
+    bool win = true;
+    int prize = 0;
+    // compares correct to each possibility
+    switch (correct) {
+        case 1:
+            prize = 4;
+            break;
+        case 2:
+            prize = 7;
+            break;
+        case 3:
+            prize = 100;
+            break;
+        case 4:
+            prize = 100000;
+            break;
+        case 5:
+            prize = 100000000;
+            break;
+        default:
+            win = false;
+            break;
+    }
+    if (win == true)
+        cout << "\n\nCongrats, you got " << correct << " number(s) right, that gives you a prize of $";
+        cout << prize << "!\n";
+    else
+        cout << "\n\nYou didn't get any numbers right, what a shame.\n";
+} </pre>
+      </div>
+      </details>
+      <p>&nbsp;</p>
+    </div>
+    <div class="footer"> <img src="images/footer.png" width="980" height="15" alt=""/> </div>
+  </div>
+</div>
+</body>
+</html>

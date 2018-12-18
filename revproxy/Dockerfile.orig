@@ -1,0 +1,13 @@
+#Alpine Nginx for revproxy
+
+FROM alpine:latest
+MAINTAINER Mike Peterson <mike@lemonshell.com>
+
+
+RUN mkdir /tmp/nginx
+RUN apk add nginx
+ADD ./nginx.conf /etc/nginx/nginx.conf
+#CMD nginx
+
+# Expose the ports for nginx
+EXPOSE 80 443 2222

@@ -1,0 +1,34 @@
+docker image prune
+docker container prune
+
+
+#REV PROXY
+docker build -t revproxy /root/docker/revproxy
+docker run -dit -p 80:80 -p 443:443 -p 2222:22 --network=lemlan --name=revproxy revproxy
+
+#HYPERLAMP
+docker build -t hyperlamp /root/docker/hyperlamp
+docker run -dt --network=lemlan --name=hyperlamp hyperlamp
+
+#LEMONSHELL
+docker build -t lemonshell /root/docker/lemonshell
+docker run -dt --network=lemlan --name=lemonshell lemonshell
+
+
+
+
+#Terraria
+docker build -t terraria /root/docker/terraria
+docker run -it -p 4263:4263 --name=terraria terraria
+
+
+docker kill hyperlamp
+docker container prune
+
+
+
+
+
+
+
+ docker network create --driver bridge lemlan

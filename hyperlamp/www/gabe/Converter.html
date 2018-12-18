@@ -1,0 +1,136 @@
+
+<html>
+<head>
+<title>Javascript Example of Hexadecimal to Decimal conversion</title>
+<script language="javascript">
+<!-- //code hiding
+   function hexdec(f1) {
+      f1.hexval.value = f1.hexval.value.toUpperCase();
+      rval = parseInt(f1.hexval.value,16);
+      f1.result.value=rval;
+   }
+   function dechex(f1) {
+      rval= f1.redval.value;
+      rhex = tohex(rval);
+      f1.hexnot.value = rhex;
+   }
+   function tohex(i) {
+      a2 = ''
+      ihex = hexQuot(i);
+      idiff = eval(i + '-(' + ihex + '*16)')
+      a2 = itohex(idiff) + a2;
+      while( ihex >= 16) {
+         itmp = hexQuot(ihex);
+         idiff = eval(ihex + '-(' + itmp + '*16)');
+         a2 = itohex(idiff) + a2;
+         ihex = itmp;
+      }
+      a1 = itohex(ihex);
+      return a1 + a2 ;
+   }
+   function hexQuot(i) {
+      return Math.floor(eval(i +'/16'));
+   }
+   function itohex(i) {
+      if( i == 0) {
+         aa = '0' }
+      else { if( i== 1) {
+                aa = '1'}
+         else {if( i== 2) {
+                  aa = '2'}
+            else {if( i == 3) {
+                     aa = '3' }
+               else {if( i== 4) {
+                        aa = '4'}
+                  else {if( i == 5) {
+                           aa = '5' }
+                     else {if( i== 6) {
+                              aa = '6'}
+                        else {if( i == 7) {
+                                 aa = '7' }
+                           else {if( i== 8) {
+                                    aa = '8'}
+                              else {if( i == 9) {
+                                        aa = '9'}
+                                 else {if( i==10) {
+                                          aa = 'A'}
+                                    else {if( i==11) {
+                                             aa = 'B'}
+                                       else {if( i==12) {
+                                                aa = 'C'}
+                                          else {if( i==13) {
+                                                   aa = 'D'}
+                                             else {if( i==14) {
+                                                      aa = 'E'}
+                                                else {if( i==15) {
+                                                         aa = 'F'}
+
+                                                }
+                                             }
+                                          }
+                                       }
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+      return aa
+   }
+      
+//-->
+</script>
+<style>
+      body{
+      height:98vh;
+      background: #159ac5; /*browsers that don't support gradients*/
+      background: -webkit-linear-gradient(left top, #159ac5, #04a54c); /*Safari*/
+      background: -o-linear-gradient(bottom right, #159ac5, #04a54c); /*Opera*/
+      background: -moz-linear-gradient(bottom right, #159ac5, #04a54c); /*Firefox*/
+      background: linear-gradient(to bottom right, #159ac5, #04a54c); /*Standard*/
+      -webkit-user-select: none; /*Chrome/Safari*/
+      -moz-user-select: none; /*Firefox*/
+      -ms-user-select: none; /*IE*/
+      user-select: none; /*Someday*/
+	  margin-top: 8%;
+      }
+</style>
+</head>
+<body>
+<h1 align=center><br>Hexadecimal and decimal converter Examples</h1>
+<P>This page contains two simple javscript examples for converting
+back and forth between hexadecimal and decimal notations. If you
+have any use for it go ahead and save/download/steal it.
+<hr noshade>
+<h2 align=center>Hexadecimal to Decimal</h2>
+<P>This example converts a number in hexadecimal notation (e.g. FF)
+to decimal (e.g. 255).
+<div align=center>
+<form>
+Hexadecimal Value<input type="text" value="ff" name="hexval" size="3">
+<input type="button" value="convert" onClick="hexdec(this.form)">
+Decimal Value<input type="text" value=" " name="result" size=5">
+</form>
+</div>
+<hr noshade>
+<h2 align=center>Decimal to Hexadecimal</h2>
+<P>This example converts a number in decimal notation (e.g. 255)
+to hexadecimal (e.g. FF).
+<div align=center>
+<form>
+Decimal Value<input type="text" value="255" name="redval" size="3">
+<input type="button" value="convert" onClick="dechex(this.form)">
+Hexadecimal Notation<input type="text" value="FF" name="hexnot" size=5>
+</form>
+</div>
+<hr noshade>
+<blockquote><font size=4>
+The human eye can recognize or differentiate around 10 million distinct colors.  A computer screen can generate 16 to the 6th power or approximated 17 million different colors.  As a web master, you can use hexidecimal notation for your colors or generic names (red, green, light green, etc.) for the colors.  You can code colors either way.  An example would be <font color="#d92626">#d92626</font>.  The "#" sign is used to code hexadecimal.  You could also use font color= <font color="lightgreen">"lightgreen"</font> with the appropriate tags.</font>
+</blockquote>
+</body>
+</html>

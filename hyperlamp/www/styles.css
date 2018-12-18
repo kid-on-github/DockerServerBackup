@@ -1,0 +1,141 @@
+body {
+	padding-top: 50px;
+	background: #1778FF;
+	/* browsers that don't support gradients */
+	background: -webkit-linear-gradient(left top, #1778FF, #0CFF60);
+	/*Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #1778FF, #0CFF60);
+	/* Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #1778FF, #0CFF60);
+	/* Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #1778FF, #0CFF60);
+	/* Standard */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #eaeaea;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse.bg-lamp li a,
+.navbar-inverse.bg-lamp {
+	color: #fff;
+	background-color: #15A1E8;
+	border-color: #1778FF;
+}
+
+.navbar-inverse.bg-lamp li a:hover,
+.navbar-inverse.bg-lamp li a:focus,
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .active a:hover,
+.navbar-inverse .navbar-nav .active a:focus {
+	color: #fff;
+	background-color: #1778FF;
+}
+
+#myCarousel {
+	margin: 20px auto;
+}
+
+.carousel-inner .item img,
+.carousel-inner .item a img {
+	margin: auto;
+	border-radius: 20px;
+}
+
+.carousel-control.left {
+	border-radius: 20px 0 0 20px;
+}
+
+.carousel-control.right {
+	border-radius: 0 20px 20px 0;
+}
+
+.carousel-inner.item.active.left {
+	border-radius: 20px 0 0 20px;
+}
+
+.darkcaption {
+	color: #000000;
+}
+
+.darkcaption.poke {
+	margin-bottom: 20px;
+}
+
+.col-lg-3 {
+	border: 5px solid #0BBFE8;
+	background-color: #15A1E8;
+	border-radius: 17px;
+	font-weight: bold;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+}
+
+.col-lg-9 {
+	border: 5px solid #0BBFE8;
+	background-color: #15A1E8;
+	border-radius: 17px;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	margin-right: 1%;
+}
+
+.btn {
+	margin-left: 20px;
+}
+
+.email {
+	margin: 10px 0;
+	padding: 0;
+	color: #eaeaea;
+}
+
+.image {
+	display: block;
+	border: 5px solid #0BBFE8;
+	border-radius: 17px;
+	margin: 10px auto;
+}
+
+.name {
+	display: inline-block;
+}
+
+.profile {
+	margin: 10px;
+	float: right;
+}
+
+iframe {
+	display: block;
+	margin: 8% auto 0 auto;
+}
+
+.gameWindow {
+	margin: 1%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.hlamp {
+	height: 622px;
+	width: 1000px;
+}
+
+.hlamp2 {
+	height: 620px;
+	width: 620px;
+}
+
+.songhai {
+	height: 564px;
+	width: 1000px;
+}
+
+.error {
+	margin-top: 5%;
+	text-align: center;
+	font-weight: bold;
+}
